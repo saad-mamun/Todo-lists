@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- animation js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>To-Do List</title>
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .edit-active {
+      border-color: #4A90E2;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen animate__animated animate__fadeInDown">
+
+  <main class="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
+    <h1 class="text-2xl font-bold mb-4 text-center   animate__animated animate__fadeInDown animate__delay-1s">To-Do List</h1>
+    
+    <form id="todo-form" class="mb-6 animate__animated animate__fadeInUp animate__delay-1s">
+      <div class="flex items-center border-b-2 border-gray-300 pb-2">
+        <input type="text" id="todo-input" placeholder="Enter a new to-do" class="flex-1 p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 transition">
+        <button type="submit" class="ml-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Add</button>
+      </div>
+    </form>
+   
+    <ul id="todo-list" class="list-disc pl-5 space-y-2">
+ 
+    </ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
